@@ -15,7 +15,7 @@ int main() {
   int msqid;
   key_t key;
 
-  if ((key = ftok("./dat/msgq.dat", 'b')) == -1) {
+  if ((key = ftok("/tmp/msgq.dat", 'b')) == -1) {
     perror("ftok");
     exit(1);
   }
